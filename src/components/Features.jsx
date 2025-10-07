@@ -24,17 +24,6 @@ const sections = [
     id: 2,
     badge: "SAFETY & COMFORT",
     title: "Your peace of mind",
-<<<<<<< HEAD
-    image: "./amenities.png",
-    reverse: true,
-    features: [
-      { icon: "/icons/wifi.svg", title: "Wi-Fi in all vehicles" },
-      { icon: "/icons/BOTTLE.svg", title: "Bottled water & refreshments" },
-      { icon: "/icons/mpc.svg", title: "Mobile phone charging ports" },
-      { icon: "/icons/lls.svg", title: "Luxury leather seating with ample legroom" },
-      { icon: "/icons/ccc.svg", title: "Climate-controlled cabins (AC & heating)" },
-      { icon: "/icons/pcpc.svg", title: "Privacy curtains in premium cars" },
-=======
     image: "./safety_and_comfort.png",
     reverse: true,
     features: [
@@ -42,28 +31,10 @@ const sections = [
       { icon: "/icons/sanitized.svg", title: "Strict hygiene & sanitization of vehicles" },
       { icon: "/icons/child_safety.svg", title: "Child safety seats on request" },
       { icon: "/icons/gpstracking.svg", title: "GPS tracking & route optimization" },
->>>>>>> 80db274 (Initial commit)
     ],
   },
   {
     id: 3,
-<<<<<<< HEAD
-    badge: "IN-CAR FACILITIES",
-    title: (
-      <>
-        Every Ride, <br /> Thoughtfully Equipped
-      </>
-    ),
-    image: "./amenities.png",
-    reverse: false,
-    features: [
-      { icon: "/icons/wifi.svg", title: "Wi-Fi in all vehicles" },
-      { icon: "/icons/BOTTLE.svg", title: "Bottled water & refreshments" },
-      { icon: "/icons/mpc.svg", title: "Mobile phone charging ports" },
-      { icon: "/icons/lls.svg", title: "Luxury leather seating with ample legroom" },
-      { icon: "/icons/ccc.svg", title: "Climate-controlled cabins (AC & heating)" },
-      { icon: "/icons/pcpc.svg", title: "Privacy curtains in premium cars" },
-=======
     badge: "PREMIUM AMENITIES",
     title: (
       <>
@@ -77,7 +48,6 @@ const sections = [
       { icon: "/icons/assistance_with_luggage.svg", title: "Assistance with luggage" },
       { icon: "/icons/newspapers.svg", title: "Newspapers, magazines, or in car entertainment" },
       { icon: "/icons/scented_interiors.svg", title: "Option for scented interiors and ambient lighting" },
->>>>>>> 80db274 (Initial commit)
     ],
   },
 ];
@@ -99,10 +69,7 @@ function Features() {
             section.reverse ? "sm:flex-row-reverse" : ""
           }`}
         >
-<<<<<<< HEAD
-=======
           {/* Left/Right Image */}
->>>>>>> 80db274 (Initial commit)
           <div className="w-full sm:w-1/2 h-[40vh] sm:h-[70vh] bg-black">
             <img
               src={section.image}
@@ -111,30 +78,18 @@ function Features() {
             />
           </div>
 
-<<<<<<< HEAD
-          <div className="w-full sm:w-1/2 py-5 sm:px-20 flex-flex-col items-center justify-center">
-            <div className="bg-black w-fit px-3 py-2 text-white text-sm rounded-2xl">
-              {section.badge}
-            </div>
-=======
           {/* Text Side (now centered vertically) */}
           <div className="w-full sm:w-1/2 py-16 sm:py-8 sm:px-20 flex flex-col justify-center">
             <div className="bg-black w-fit px-3 py-2 text-white text-sm rounded-2xl">
               {section.badge}
             </div>
 
->>>>>>> 80db274 (Initial commit)
             <div className="text-3xl sm:text-5xl py-3">{section.title}</div>
 
             <div className="grid grid-cols-2 py-5 gap-8">
               {section.features.map((feature, i) => (
-<<<<<<< HEAD
-                <div key={i} className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center">
-=======
                 <div key={i} className="flex items-center gap-4">
                   <div className="flex-shrink-0 w-8 h-8 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center">
->>>>>>> 80db274 (Initial commit)
                     <img src={feature.icon} alt="" />
                   </div>
                   <div>

@@ -25,11 +25,7 @@ function Qualities() {
               <img
                 src={quality.icon}
                 alt={quality.text}
-<<<<<<< HEAD
-                className="h-10 sm:h-16"
-=======
                 className="h-10"
->>>>>>> 80db274 (Initial commit)
               />
               <p className="text-base sm:text-lg">{quality.text}</p>
             </div>

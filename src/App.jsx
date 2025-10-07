@@ -9,10 +9,7 @@ import Qualities from './components/Qualities'
 import ChauffeurForm from './components/Form'
 import FAQ from './components/Faq'
 import Footer from './components/Footer'
-<<<<<<< HEAD
-=======
 import FleetPage from './components/Cars'
->>>>>>> 80db274 (Initial commit)
 
 function App() {
   useEffect(() => {
@@ -39,10 +36,7 @@ function App() {
     <div>
       <Navbar />
       <Landing />
-<<<<<<< HEAD
-=======
       <FleetPage/>
->>>>>>> 80db274 (Initial commit)
       <VisionSection />
       <Features/>
       <Qualities/>

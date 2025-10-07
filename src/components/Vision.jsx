@@ -45,21 +45,13 @@ export default function VisionSection() {
       <div className="relative z-20 w-full px-4 md:px-20 pb-8 md:pb-16">
         <div
           ref={subheadingRef}
-<<<<<<< HEAD
-          className="text-[#CDAF8C] text-xs md:text-sm mb-2 md:mb-4 font-semibold tracking-wide opacity-0"
-=======
           className="text-[#CDAF8C] text-xl md:text-2xl mb-2 md:mb-4 font-semibold tracking-wide opacity-0"
->>>>>>> 80db274 (Initial commit)
         >
           OUR VISION
         </div>
         <h2
           ref={headingRef}
-<<<<<<< HEAD
-          className="text-white text-2xl md:text-5xl font-semibold leading-snug md:leading-tight max-w-xl opacity-0"
-=======
           className="text-white text-4xl md:text-5xl font-semibold leading-snug md:leading-tight max-w-xl opacity-0"
->>>>>>> 80db274 (Initial commit)
         >
           The Gold Standard
           <br className="hidden md:inline" /> in Chauffeur Service
