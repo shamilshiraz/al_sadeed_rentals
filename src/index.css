@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: 'abc';
+  src: url('./assets/ABCFavorit-Regular-Trial.woff2');
+}
