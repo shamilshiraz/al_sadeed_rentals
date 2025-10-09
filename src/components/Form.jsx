@@ -114,34 +114,37 @@ function ChauffeurForm() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Why Choose */}
           <div className="bg-white rounded-2xl shadow-md p-6">
-            <h4 className="text-lg font-semibold text-gray-900 mb-4">
-              Why Choose Al Sadeed
-            </h4>
-            <ul className="space-y-2 text-gray-700 text-sm">
-              <li className="flex items-center gap-2">
-                <FaCheck className="text-[#cdaf8c]" /> Trained, uniformed
-                chauffeurs with route optimization
-              </li>
-              <li className="flex items-center gap-2">
-                <FaCheck className="text-[#cdaf8c]" /> New-shape vehicles,
-                discreet & impeccably maintained
-              </li>
-              <li className="flex items-center gap-2">
-                <FaCheck className="text-[#cdaf8c]" /> Airport meet & greet with
-                personalized signage
-              </li>
-              <li className="flex items-center gap-2">
-                <FaCheck className="text-[#cdaf8c]" /> Transparent pricing,
-                online payment & 24/7 support
-              </li>
-            </ul>
+            <div className="text-lg flex gap-3 font-semibold text-gray-900 mb-4">
+              <img src="/icons/why_al_sadeed.svg" alt="" />
+             <span>Why Choose Al Sadeed</span> 
+            </div>
+ <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-700 text-sm">
+  <li className="flex items-center gap-2">
+    <img src="/icons/TICK.svg" alt="TICK" className="w-4 h-4" />
+    Trained, uniformed chauffeurs with route optimization
+  </li>
+  <li className="flex items-center gap-2">
+    <img src="/icons/TICK.svg" alt="TICK" className="w-4 h-4" />
+    New-shape vehicles, discreet & impeccably maintained
+  </li>
+  <li className="flex items-center gap-2">
+    <img src="/icons/TICK.svg" alt="TICK" className="w-4 h-4" />
+    Airport meet & greet with personalized signage
+  </li>
+  <li className="flex items-center gap-2">
+    <img src="/icons/TICK.svg" alt="TICK" className="w-4 h-4" />
+    Transparent pricing, online payment & 24/7 support
+  </li>
+</ul>
+
           </div>
 
           {/* Service Areas */}
           <div className="bg-white rounded-2xl shadow-md p-6">
-            <h4 className="text-lg font-semibold text-gray-900 mb-4">
-              Service Areas
-            </h4>
+            <div className="text-lg flex gap-3 font-semibold text-gray-900 mb-4">
+              <img src="/icons/location.svg" alt="" />
+             <span>Service Areas</span> 
+            </div>
             <p className="text-gray-700 text-sm">
               Chauffeur services available nationwide, anywhere in Qatar.
             </p>

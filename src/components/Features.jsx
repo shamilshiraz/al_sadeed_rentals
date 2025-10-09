@@ -65,7 +65,7 @@ function Features() {
       {sections.map((section) => (
         <section
           key={section.id}
-          className={`flex flex-col sm:flex-row ${
+          className={`flex flex-col  sm:flex-row ${
             section.reverse ? "sm:flex-row-reverse" : ""
           }`}
         >

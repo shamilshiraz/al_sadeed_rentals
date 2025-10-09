@@ -43,7 +43,7 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-8 items-center">
-          {["fleet", "Amenities", "Booking", "Contact"].map((text, i) => (
+          {["Fleet", "Amenities", "Booking", "Contact"].map((text, i) => (
             <a
               key={text}
               href={`#${text.toLowerCase()}`}
@@ -90,7 +90,7 @@ export default function Navbar() {
       {/* Mobile Dropdown */}
       {menuOpen && (
         <div className="md:hidden bg-[#1e1e1ef0] px-6 pb-3 flex flex-col gap-3">
-          {["fleet", "Amenities", "Booking", "Contact"].map((text) => (
+          {["Fleet", "Amenities", "Booking", "Contact"].map((text) => (
             <a
               key={text}
               href={`#${text.toLowerCase()}`}
