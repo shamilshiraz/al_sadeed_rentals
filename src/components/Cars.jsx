@@ -81,7 +81,7 @@ export default function Fleet() {
                 {filteredCars.map((car) => (
                   <div
                     key={car.id}
-                    className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all min-w-[80%] snap-start"
+                    className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all w-[80vw] snap-start"
                   >
                     <div className="bg-gray-100 p-6 flex items-center justify-center">
                       <img
