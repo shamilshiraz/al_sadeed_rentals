@@ -55,7 +55,7 @@ function FAQ() {
   };
 
   return (
-    <div className="bg-gray-50 py-20 px-4">
+    <div id="faq" className="bg-gray-50 py-20 px-4">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10">

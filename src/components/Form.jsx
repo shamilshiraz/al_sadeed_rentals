@@ -3,7 +3,7 @@ import { FaRegCalendarAlt, FaPaperPlane, FaCheck } from "react-icons/fa";
 
 function ChauffeurForm() {
   return (
-    <div className="bg-gray-50 py-20 px-4">
+    <div id="booking" className="bg-[#f7f9fd] py-20 px-4">
       {/* Centered Container */}
       <div className="max-w-5xl mx-auto">
         {/* Header */}
@@ -24,27 +24,44 @@ function ChauffeurForm() {
 
           <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Full Name */}
+            <div className="">
+              <p>Full Name</p>
             <input
               type="text"
+              label=""
               placeholder="Your name"
-              className="border rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
+              className="border w-full rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
             />
+            </div>
 
-            {/* Company */}
+                        <div className="">
+              <p>Company </p>
             <input
               type="text"
               placeholder="Company (optional)"
-              className="border rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
+              className="border w-full rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
             />
+            </div>
+
+
+            {/* Company */}
+
 
             {/* Email */}
+
+                                    <div className="">
+              <p>Mail </p>
             <input
               type="email"
               placeholder="you@email.com"
-              className="border rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
+              className="border w-full rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
             />
+            </div>
 
             {/* Phone */}
+
+                                                <div className="">
+              <p>Phone </p>
             <div className="flex items-center border rounded-lg px-2">
               <span className="text-gray-500 px-2">+974</span>
               <input
@@ -53,22 +70,46 @@ function ChauffeurForm() {
                 className="flex-1 px-2 py-3 focus:outline-none"
               />
             </div>
+            </div>
 
-            {/* Pickup */}
+ 
+
+
+
+            {/* Date & Time */}
+
+
+            {/* Vehicle Preference */}
+
+
+            {/* Notes (Full Width) */}
+            <div className="hidden sm:block">
+              <p>Specifications</p>
+            <textarea
+              placeholder="Notes (child seat, signage, hours...)"
+              className="md:col-span-2 w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
+            />
+            </div>
+
+            <div className="grid grid-cols-1  md:grid-cols-2 gap-6 ">
+              <div className="">
+                <p>Pickup</p>
             <input
               type="text"
               placeholder="Pickup"
               className="border rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
             />
-
-            {/* Dropoff */}
+              </div>
+                            <div className="">
+                <p>Drop off</p>
             <input
               type="text"
               placeholder="Drop-off"
               className="border rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
             />
-
-            {/* Date & Time */}
+              </div>
+              <div className="">
+                <p>Date & Time</p>
             <div className="relative">
               <input
                 type="text"
@@ -77,37 +118,37 @@ function ChauffeurForm() {
               />
               <FaRegCalendarAlt className="absolute right-3 top-3 text-gray-400 w-5 h-5" />
             </div>
-
-            {/* Vehicle Preference */}
+              </div>
+                            <div className="">
+                <p>Vehicle preference</p>
             <select className="border rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]">
-              <option>Mercedes-Benz S450</option>
-              <option>BMW 7 Series</option>
-              <option>Audi A8</option>
+              <option>Sedans</option>
+              <option>SUV</option>
+              <option>Vans & MPVs</option>
+                            <option>Ultra luxury</option>
             </select>
-
-            {/* Notes (Full Width) */}
+              </div>
+            </div>
+                        <div className="sm:hidden block">
+              <p>Specifications</p>
             <textarea
               placeholder="Notes (child seat, signage, hours...)"
-              className="md:col-span-2 border rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
+              className="md:col-span-2 w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
             />
-
-            {/* Submit Button */}
-            <div className="md:col-span-2 flex flex-col sm:flex-row items-center gap-4">
-              <button
-                type="submit"
-                className="flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition"
-              >
-                <FaPaperPlane className="w-4 h-4" /> Submit Enquiry
-              </button>
-              <label className="flex items-center gap-2 text-sm text-gray-600">
-                <input type="checkbox" className="rounded" /> Chat on WhatsApp
-              </label>
             </div>
-          </form>
+<div className="flex-1"></div>
+<div className="flex gap-4"> 
+  <button className="bg-black shadow-lg text-white px-3 py-2 rounded-lg">Submit Enquiry </button>
+  <button className="flex gap-3 bg-gray-300 py-2 px-3 rounded-lg"> <img src="/icons/chat.svg" alt="" />Chat on Whatsapp</button>
+</div>
+<div className="flex-1"></div>
+
           <p className="text-xs text-gray-400 mt-4">
             By submitting, you agree to our terms. *Some rides are available
             only upon prior booking.
           </p>
+          </form>
+
         </div>
 
         {/* Bottom Info Boxes */}

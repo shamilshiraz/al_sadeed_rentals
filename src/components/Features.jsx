@@ -54,7 +54,7 @@ const sections = [
 
 function Features() {
   return (
-    <div className="px-4 sm:px-20 py-20">
+    <div id="amenities" className="px-4 sm:px-20 py-20">
       <h3 className="flex justify-center text-[#cdaf8c]">
         INCLUDED WITH EVERY RIDE
       </h3>
@@ -65,7 +65,7 @@ function Features() {
       {sections.map((section) => (
         <section
           key={section.id}
-          className={`flex flex-col  sm:flex-row ${
+          className={`flex flex-col bg-[#f7f9fd]  sm:flex-row ${
             section.reverse ? "sm:flex-row-reverse" : ""
           }`}
         >

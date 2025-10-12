@@ -7,6 +7,7 @@ export default function Landing() {
   const paragraphRef = useRef(null);
   const buttonsRef = useRef(null);
   const whatsappRef = useRef(null);
+  const starsRef = useRef(null);
 
   useEffect(() => {
     const tl = gsap.timeline({ delay: 0.5 });
@@ -45,6 +46,17 @@ export default function Landing() {
           ease: "expo.out",
         },
         "-=1"
+      )
+      .fromTo(
+        starsRef.current,
+        { y: 40, autoAlpha: 0 },
+        {
+          y: 0,
+          autoAlpha: 1,
+          duration: 1.2,
+          ease: "expo.out",
+        },
+        "-=0.8"
       )
       .fromTo(
         whatsappRef.current,
@@ -90,7 +102,7 @@ export default function Landing() {
       </div>
 
       {/* Content */}
-      <section className="relative z-10 w-full min-h-screen flex flex-col  justify-end py-4 px-4 md:px-20">
+      <section className="relative z-10 w-full min-h-screen flex flex-col justify-end py-4 px-4 md:px-20">
         <div className="w-full flex flex-col md:flex-row md:justify-between md:items-end">
           {/* Text content */}
           <div className="md:max-w-xl">
@@ -135,7 +147,27 @@ export default function Landing() {
               </a>
             </div>
           </div>
+
+{/* Star Rating Section - All in One Line */}
+<div
+  ref={starsRef}
+  className="flex items-center gap-3 text-white sm:pb-8 sm:text-right opacity-0 mb-8 md:mb-0"
+>
+    {/* "EXCELLENT" */}
+  <span className="text-sm font-medium">EXCELLENT</span>
+  {/* Stars */}
+  <div className="flex gap-1">
+    {[...Array(5)].map((_, i) => (
+      <span key={i} className="text-gray-400 text-lg">★</span>
+    ))}
+  </div>
+
+  {/* "Reviews on Google" */}
+  <span className="text-xs text-gray-300">Reviews on Google</span>
+</div>
+
         </div>
+
 
       </section>
     </main>

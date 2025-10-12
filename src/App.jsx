@@ -10,6 +10,7 @@ import ChauffeurForm from './components/Form'
 import FAQ from './components/Faq'
 import Footer from './components/Footer'
 import FleetPage from './components/Cars'
+import WhatsappButton from './components/WhatsappButton'
 
 function App() {
   useEffect(() => {
@@ -35,6 +36,7 @@ function App() {
   return (
     <div>
       <Navbar />
+      <WhatsappButton/>
       <Landing />
       <FleetPage/>
       <VisionSection />

@@ -7,3 +7,7 @@
   font-family: 'abc';
   src: url('./assets/ABCFavorit-Regular-Trial.woff2');
 }
+
+::-webkit-scrollbar{
+  display: hidden;
+}
