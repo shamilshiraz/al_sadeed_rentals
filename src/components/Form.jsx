@@ -29,6 +29,7 @@ function ChauffeurForm() {
             <input
               type="text"
               label=""
+              required
               placeholder="Your name"
               className="border w-full rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
             />
@@ -53,6 +54,7 @@ function ChauffeurForm() {
               <p>Mail </p>
             <input
               type="email"
+              required
               placeholder="you@email.com"
               className="border w-full rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
             />
@@ -65,6 +67,7 @@ function ChauffeurForm() {
             <div className="flex items-center border rounded-lg px-2">
               <span className="text-gray-500 px-2">+974</span>
               <input
+              required
                 type="text"
                 placeholder="Phone (WhatsApp)"
                 className="flex-1 px-2 py-3 focus:outline-none"

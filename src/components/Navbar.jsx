@@ -57,12 +57,15 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
-          <span className="flex items-center bg-white/10 border border-gray-700 px-4 py-1 rounded-full ml-3 hover:bg-[#cdaf8c] hover:text-black transition font-semibold text-sm">
-            <MdCall className="mr-2" />
-            +974 0000 0000
-          </span>
+<a href="tel:+97470750055">
+  <span className="flex items-center bg-white/10 border border-gray-700 px-4 py-1 rounded-full ml-3 hover:bg-[#cdaf8c] hover:text-black transition font-semibold text-sm">
+    <MdCall className="mr-2" />
+    +974 70 750 055
+  </span>
+</a>
+
           <a
-            href="#book"
+            href="#booking"
             className="bg-white/10 border border-gray-700 px-4 py-1 rounded-full ml-3 hover:bg-[#cdaf8c] hover:text-black transition font-semibold text-sm"
           >
             BOOK NOW

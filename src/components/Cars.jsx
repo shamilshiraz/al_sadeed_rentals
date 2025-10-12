@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
-const categories = ["SEDANS", "VANS & MPVs", "SUVs", "ULTRA-LUXURY"];
+const categories = ["SEDANS", "MPVs", "SUVs", "ULTRA-LUXURY","VANS & BUSES"];
 
 export default function Fleet() {
   const [cars, setCars] = useState([]);
-  const [activeCategory, setActiveCategory] = useState("SUVs");
+  const [activeCategory, setActiveCategory] = useState("SEDANs");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -113,9 +113,15 @@ export default function Fleet() {
                         <span className="px-4 py-2 bg-gray-100 rounded-xl text-xs">
                           QAR {car.cost10hrs} / 10hr
                         </span>
-                        <span className="px-4 py-2 bg-black text-white rounded-xl text-xs">
-                          Book a ride
-                        </span>
+<a
+  href={`https://wa.me/97470750055?text=I%20am%20interested%20in%20${encodeURIComponent(car.carName)}`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-4 py-2 bg-black text-white rounded-xl text-xs"
+>
+    Book a ride
+</a>
+
                       </div>
                     </div>
                   </div>
@@ -179,9 +185,13 @@ export default function Fleet() {
                         <span className="px-4 py-2 bg-gray-100 rounded-xl text-xs">
                           QAR {cost10hrs} / 10hr
                         </span>
-                        <span className="px-4 py-2 bg-black text-white rounded-xl text-xs">
+                        <a
+                          href={`https://wa.me/97470750055?text=I%20am%20interested%20in%20${encodeURIComponent(car.carName)}`}
+  target="_blank"
+  rel="noopener noreferrer"
+   className="px-4 py-2 bg-black text-white rounded-xl text-xs">
                           Book a ride
-                        </span>
+                        </a>
                       </div>
                     </div>
                   </div>
