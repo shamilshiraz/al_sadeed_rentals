@@ -28,9 +28,11 @@ export default function Fleet() {
   }, []);
 
   const filteredCars = Array.isArray(cars)
-    ? cars.filter(
-        (car) => car.category?.toUpperCase() === activeCategory.toUpperCase()
-      )
+    ? cars
+        .filter(
+          (car) => car.category?.toUpperCase() === activeCategory.toUpperCase()
+        )
+        .sort((a, b) => a.carName.localeCompare(b.carName))
     : [];
 
   if (loading) {
