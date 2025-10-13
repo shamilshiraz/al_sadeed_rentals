@@ -14,8 +14,8 @@ const sections = [
     features: [
       { icon: "/icons/wifi.svg", title: "Wi-Fi in all vehicles" },
       { icon: "/icons/BOTTLE.svg", title: "Bottled water & refreshments" },
-      { icon: "/icons/mpc.svg", title: "Mobile phone charging ports" },
-      { icon: "/icons/lls.svg", title: "Luxury leather seating with ample legroom" },
+      { icon: "/icons/charging.svg", title: "Mobile phone charging ports" },
+      { icon: "/icons/leather.svg", title: "Luxury leather seating with ample legroom" },
       { icon: "/icons/ccc.svg", title: "Climate-controlled cabins (AC & heating)" },
       { icon: "/icons/pcpc.svg", title: "Privacy curtains in premium cars" },
     ],
