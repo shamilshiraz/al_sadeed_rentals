@@ -27,13 +27,14 @@ export default function Fleet() {
     fetchData();
   }, []);
 
-  const filteredCars = Array.isArray(cars)
-    ? cars
-        .filter(
-          (car) => car.category?.toUpperCase() === activeCategory.toUpperCase()
-        )
-        .sort((a, b) => a.carName.localeCompare(b.carName))
-    : [];
+const filteredCars = Array.isArray(cars)
+  ? cars
+      .filter(
+        (car) => car.category?.toUpperCase() === activeCategory.toUpperCase()
+      )
+      .sort((a, b) => (a.priority ?? 999) + (b.priority ?? 999))
+  : [];
+
 
   if (loading) {
     return (
