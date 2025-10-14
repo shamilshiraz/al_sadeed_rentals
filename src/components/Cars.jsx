@@ -151,11 +151,11 @@ function CarCard({ car }) {
     <div
       className="
         bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all
-        w-[90vw] sm:w-auto h-[300px] flex-shrink-0
+        w-[90vw] sm:w-auto h-[360px] flex-shrink-0 flex flex-col
       "
     >
       {/* Image Section */}
-      <div className="bg-gray-100 p-6 flex items-center justify-center h-[180px]">
+      <div className="bg-gray-100 p-6 flex items-center justify-center h-[200px]">
         <img
           src={fullImgUrl}
           alt={carName}
@@ -164,7 +164,8 @@ function CarCard({ car }) {
       </div>
 
       {/* Content Section */}
-      <div className="py-5 px-4 h-[240px] flex flex-col justify-between">
+      <div className="flex flex-col justify-between flex-1 p-4">
+        {/* Title + Info */}
         <div>
           <h3 className="font-semibold text-xl text-gray-900">{carName}</h3>
           <div className="flex justify-between mt-2 text-gray-500 text-sm">
@@ -179,8 +180,8 @@ function CarCard({ car }) {
           </div>
         </div>
 
-        {/* Pricing & Button */}
-        <div className="flex gap-2 mt-4 flex-wrap">
+        {/* Prices + Book Button */}
+        <div className="flex gap-2 mt-4 flex-wrap items-center">
           <span className="px-4 py-2 bg-gray-100 rounded-xl text-xs">
             QAR {cost5hrs} / 5hr
           </span>
@@ -193,13 +194,14 @@ function CarCard({ car }) {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 bg-black text-white rounded-xl text-xs"
+            className="px-4 py-2 bg-black text-white rounded-xl text-xs flex-1 text-center"
           >
-            Book a ride
+            Book a Ride
           </a>
         </div>
       </div>
     </div>
   );
 }
+
 
