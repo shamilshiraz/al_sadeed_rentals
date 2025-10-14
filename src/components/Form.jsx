@@ -164,19 +164,19 @@ function ChauffeurForm() {
             </div>
  <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-700 text-sm">
   <li className="flex items-center gap-2">
-    <img src="/icons/TICK.svg" alt="TICK" className="w-4 h-4" />
+    <img src="/icons/tick.svg" alt="TICK" className="w-4 h-4" />
     Trained, uniformed chauffeurs with route optimization
   </li>
   <li className="flex items-center gap-2">
-    <img src="/icons/TICK.svg" alt="TICK" className="w-4 h-4" />
+    <img src="/icons/tick.svg" alt="TICK" className="w-4 h-4" />
     New-shape vehicles, discreet & impeccably maintained
   </li>
   <li className="flex items-center gap-2">
-    <img src="/icons/TICK.svg" alt="TICK" className="w-4 h-4" />
+    <img src="/icons/tick.svg" alt="TICK" className="w-4 h-4" />
     Airport meet & greet with personalized signage
   </li>
   <li className="flex items-center gap-2">
-    <img src="/icons/TICK.svg" alt="TICK" className="w-4 h-4" />
+    <img src="/icons/tick.svg" alt="TICK" className="w-4 h-4" />
     Transparent pricing, online payment & 24/7 support
   </li>
 </ul>
