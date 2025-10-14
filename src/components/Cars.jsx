@@ -151,7 +151,7 @@ function CarCard({ car }) {
     <div
       className="
         bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all
-        w-[90vw] sm:w-auto h-[360px] flex-shrink-0 flex flex-col
+        w-[90vw] sm:w-auto min-h-[360px] flex-shrink-0 flex flex-col
       "
     >
       {/* Image Section */}
@@ -182,10 +182,10 @@ function CarCard({ car }) {
 
         {/* Prices + Book Button */}
         <div className="flex gap-2 mt-4 flex-wrap items-center">
-          <span className="px-4 py-2 bg-gray-100 rounded-xl text-xs">
+          <span className="px-2 sm:px-4 py-2 bg-gray-100 rounded-xl text-xs">
             QAR {cost5hrs} / 5hr
           </span>
-          <span className="px-4 py-2 bg-gray-100 rounded-xl text-xs">
+          <span className="px-2 sm:px-4 py-2 bg-gray-100 rounded-xl text-xs">
             QAR {cost10hrs} / 10hr
           </span>
           <a
@@ -194,9 +194,9 @@ function CarCard({ car }) {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 bg-black text-white rounded-xl text-xs flex-1 text-center"
+            className="px-2 sm:px-4 py-2 bg-black text-white rounded-xl text-xs flex-1 text-center"
           >
-            Book a Ride
+            Book a ride
           </a>
         </div>
       </div>
