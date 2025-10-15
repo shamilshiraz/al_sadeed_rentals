@@ -134,23 +134,19 @@ function ChauffeurForm() {
             </div>
                         <div className="sm:hidden block">
               <p>Specifications</p>
-            <textarea
-              placeholder="Notes (child seat, signage, hours...)"
-              className="md:col-span-2 w-full h-[30vh] border rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
-            />
+<textarea
+  placeholder="Notes (child seat, signage, hours...)"
+  className="md:col-span-2 min-h-[96px] md:min-h-[120px] w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
+/>
+
+
             </div>
 <div className="flex-1"></div>
-<div className="flex items-center gap-4 text-xs">
-  <button className="bg-black shadow-lg text-white py-2 px-4 rounded-lg">
-    Submit Enquiry
-  </button>
-  <button className="flex items-center gap-2 bg-white py-2 px-4 rounded-lg shadow-lg">
-    <img src="/icons/chat.svg" alt="Chat" />
-    Chat on Whatsapp
-  </button>
+<div className="flex gap-4"> 
+  <button className="bg-black shadow-lg text-white px-3 py-2 rounded-lg">Submit Enquiry </button>
+  <button className="flex gap-3 bg-white py-2 px-3 rounded-lg shadow-lg"> <img src="/icons/chat.svg" alt="" />Chat on Whatsapp</button>
 </div>
-
-<div className="flex-1"></div>
+<div className="flex-1 hidden sm:block"></div>
 
           <p className="text-xs text-gray-400 mt-4">
             By submitting, you agree to our terms. *Some rides are available

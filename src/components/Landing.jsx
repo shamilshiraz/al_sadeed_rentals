@@ -102,7 +102,7 @@ export default function Landing() {
       </div>
 
       {/* Content */}
-      <section className="relative z-10 w-full min-h-screen flex flex-col justify-end py-4 px-4 md:px-20">
+      <section className="relative z-10 w-full min-h-screen flex flex-col justify-end py-4 px-4 md:px-28">
         <div className="w-full flex flex-col md:flex-row md:justify-between md:items-end">
           {/* Text content */}
           <div className="md:max-w-xl">
