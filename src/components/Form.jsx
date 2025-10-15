@@ -100,7 +100,7 @@ function ChauffeurForm() {
             <input
               type="text"
               placeholder="Pickup"
-              className="border rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
+              className="border w-full rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
             />
               </div>
                             <div className="">
@@ -108,7 +108,7 @@ function ChauffeurForm() {
             <input
               type="text"
               placeholder="Drop-off"
-              className="border rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
+              className="border w-full rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
             />
               </div>
               <div className="">
@@ -136,13 +136,13 @@ function ChauffeurForm() {
               <p>Specifications</p>
             <textarea
               placeholder="Notes (child seat, signage, hours...)"
-              className="md:col-span-2 w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
+              className="md:col-span-2 w-full h-[30vh] border rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
             />
             </div>
 <div className="flex-1"></div>
 <div className="flex gap-4"> 
   <button className="bg-black shadow-lg text-white px-3 py-2 rounded-lg">Submit Enquiry </button>
-  <button className="flex gap-3 bg-gray-300 py-2 px-3 rounded-lg"> <img src="/icons/chat.svg" alt="" />Chat on Whatsapp</button>
+  <button className="flex gap-3 bg-white py-2 px-3 rounded-lg shadow-lg"> <img src="/icons/chat.svg" alt="" />Chat on Whatsapp</button>
 </div>
 <div className="flex-1"></div>
 

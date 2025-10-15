@@ -142,7 +142,7 @@ export default function Landing() {
                 href="tel:+97400000000"
                 className="flex items-center justify-center bg-black/60 text-white px-5 py-3 rounded-md border border-[#cdaf8c] text-sm font-medium opacity-0 relative overflow-hidden group"
               >
-                <span className="relative z-10">Our Fleet</span>
+                <span className="relative z-10 text-[#cdaf8c]">Our Fleet</span>
                 <span className="absolute inset-0 bg-white/5 translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0"></span>
               </a>
             </div>

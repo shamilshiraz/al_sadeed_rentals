@@ -54,7 +54,7 @@ const sections = [
 
 function Features() {
   return (
-    <div id="amenities" className="px-4 sm:px-20 py-20">
+    <div id="amenities" className="px-8 sm:px-20 py-20">
       <h3 className="flex justify-center text-[#cdaf8c]">
         INCLUDED WITH EVERY RIDE
       </h3>
@@ -79,7 +79,7 @@ function Features() {
           </div>
 
           {/* Text Side (now centered vertically) */}
-          <div className="w-full sm:w-1/2 py-16 sm:py-8 sm:px-20 flex flex-col justify-center">
+          <div className="w-full sm:w-1/2 py-16 sm:py-8 sm:px-20 px-4 flex flex-col justify-center">
             <div className="bg-black w-fit px-3 py-2 text-white text-sm rounded-2xl">
               {section.badge}
             </div>
@@ -89,7 +89,7 @@ function Features() {
             <div className="grid grid-cols-2 py-5 gap-8">
               {section.features.map((feature, i) => (
                 <div key={i} className="flex items-center gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center">
+                  <div className="flex-shrink-0 w-6 h-6 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center">
                     <img src={feature.icon} alt="" />
                   </div>
                   <div>
