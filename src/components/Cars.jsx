@@ -129,9 +129,9 @@ function CarCard({ car }) {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-2 sm:px-4 py-2 bg-black text-white rounded-xl text-xs flex-1 text-center"
+            className="px-2 sm:px-4 py-2 bg-black text-white rounded-xl text-xs flex items-center gap-1 text-center"
           >
-            <img src="/CAR.svg" alt="" />
+            <img src="/icons/CAR.svg" className="h-2" alt="" />
             Book a ride
           </a>
         </div>

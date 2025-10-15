@@ -140,10 +140,16 @@ function ChauffeurForm() {
             />
             </div>
 <div className="flex-1"></div>
-<div className="flex gap-4"> 
-  <button className="bg-black shadow-lg text-white px-3 py-2 rounded-lg">Submit Enquiry </button>
-  <button className="flex gap-3 bg-white py-2 px-3 rounded-lg shadow-lg"> <img src="/icons/chat.svg" alt="" />Chat on Whatsapp</button>
+<div className="flex items-center gap-4 text-xs">
+  <button className="bg-black shadow-lg text-white py-2 px-4 rounded-lg">
+    Submit Enquiry
+  </button>
+  <button className="flex items-center gap-2 bg-white py-2 px-4 rounded-lg shadow-lg">
+    <img src="/icons/chat.svg" alt="Chat" />
+    Chat on Whatsapp
+  </button>
 </div>
+
 <div className="flex-1"></div>
 
           <p className="text-xs text-gray-400 mt-4">
