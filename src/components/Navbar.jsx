@@ -126,7 +126,7 @@ export default function Navbar() {
           </button>
 
           {/* Mobile Nav Links */}
-          <nav className="flex flex-col gap-8 text-5xl mt-10 w-full font-medium">
+          <nav className="flex flex-col gap-8 text-5xl mt-10 w-full font-medium z-50">
             {["Fleet", "Amenities", "Booking", "Contact"].map((text, i) => (
               <a
                 key={text}

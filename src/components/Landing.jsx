@@ -126,7 +126,7 @@ export default function Landing() {
               className="flex flex-col md:flex-row gap-3 md:gap-4 mb-8"
             >
               <a
-                href="#book"
+                href="#booking"
                 className="text-black px-5 py-3 font-medium rounded-md shadow-sm transition duration-150 text-sm opacity-0 relative overflow-hidden group"
                 style={{ backgroundColor: "#CDAF8C" }}
                 onMouseEnter={(e) =>
@@ -139,7 +139,7 @@ export default function Landing() {
                 <span className="relative z-10">Book Your Ride</span>
               </a>
               <a
-                href="tel:+97400000000"
+                href="#fleet"
                 className="flex items-center justify-center bg-black/60 text-white px-5 py-3 rounded-md border border-[#cdaf8c] text-sm font-medium opacity-0 relative overflow-hidden group"
               >
                 <span className="relative z-10 text-[#cdaf8c]">Our Fleet</span>
