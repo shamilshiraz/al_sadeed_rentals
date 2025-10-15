@@ -44,16 +44,6 @@
     "carImage": "730i.png"
   },
   {
-"id":41,
-    "carName": "BMW 730i ",
-    "tagline": "Flagship poise, modern tech",
-    "headCount": 4,
-    "luggage": 3,
-    "cost5hrs": "1500",
-    "cost10hrs": "2400",
-    "carImage": "735i.png"
-  },
-  {
     "id": 5,
     "carName": "Audi A8",
     "category": "SEDANS",
@@ -165,7 +155,7 @@
   },
   {
     "id": 15,
-    "carName": "Mercedes Sprinter Van",
+    "carName": "Kia carnival",
     "category": "MPVs",
     "tagline": "Group travel, business class",
     "headCount": 14,
@@ -183,7 +173,7 @@
     "luggage": 4,
     "cost5hrs": 2900,
     "cost10hrs": 3600,
-    "carImage": "Mercedes Sprinter Van.png"
+    "carImage": "g63.jpg"
   },
   {
     "id": 16,
