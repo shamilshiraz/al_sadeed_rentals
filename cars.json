@@ -43,6 +43,17 @@
     "cost10hrs": "1600",
     "carImage": "730i.png"
   },
+    {
+    "id": 42,
+    "carName": "BMW 735i ",
+    "category": "SEDANS",
+    "tagline": "Flagship poise, modern tech",
+    "headCount": 4,
+    "luggage": 3,
+    "cost5hrs": "1500",
+    "cost10hrs": "2400",
+    "carImage": "735i.png"
+  },
   {
     "id": 5,
     "carName": "Audi A8",
