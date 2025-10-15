@@ -19,7 +19,7 @@ function Footer() {
           <div className="flex flex-col gap-3 text-sm md:text-base">
             <div className="flex items-center gap-2">
               <img src="/icons/email.svg" alt="email" className="h-4" />
-              <span>Alsadeedluxuryrental@gmail.com</span>
+              <span>Info@alsadeedluxuryrental.com</span>
             </div>
 
             <div className="flex items-center gap-2">
