@@ -128,20 +128,19 @@ function ChauffeurForm() {
                 className="border w-full rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
               />
             </div>
+{/* Date */}
+<div>
+  <p>Date</p>
+  <div className="relative">
+    <input
+      type="date"
+      name="date"
+      required
+      className="w-full border rounded-lg px-4 py-3 pr-10 focus:ring-2 focus:ring-[#cdaf8c] appearance-none"
+    />
+  </div>
+</div>
 
-            {/* Date & Time */}
-            <div>
-              <p>Date & Time</p>
-              <div className="relative">
-                <input
-                  type="text"
-                  name="datetime"
-                  placeholder="dd/mm/yy"
-                  className="w-full border rounded-lg px-4 py-3 pr-10 focus:ring-2 focus:ring-[#cdaf8c]"
-                />
-                <FaRegCalendarAlt className="absolute right-3 top-3 text-gray-400 w-5 h-5" />
-              </div>
-            </div>
 
             {/* Vehicle preference */}
             <div>
