@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { FaRegCalendarAlt } from "react-icons/fa";
+import "react-phone-input-2/lib/style.css";
+import PhoneInput from "react-phone-input-2";
+import { IoChatboxOutline } from "react-icons/io5";
 
 function ChauffeurForm() {
   const [result, setResult] = useState("");
@@ -7,8 +10,8 @@ function ChauffeurForm() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     setResult("Sending...");
-    const formData = new FormData(event.target);
 
+    const formData = new FormData(event.target);
     formData.append("access_key", "ca475208-b6bf-403a-8930-f645bd1c836a");
 
     const response = await fetch("https://api.web3forms.com/submit", {
@@ -19,16 +22,15 @@ function ChauffeurForm() {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Your enquiry has been sent successfully ✅");
+      setResult("✅ Your enquiry has been sent successfully!");
       event.target.reset();
     } else {
-      console.error("Error:", data);
-      setResult("Something went wrong. Please try again ❌");
+      setResult("❌ Something went wrong. Please try again.");
     }
   };
 
   return (
-    <div id="booking" className="bg-[#f7f9fd] py-20 px-4">
+    <div id="booking" className="bg-[#f7f9fd] py-12 sm:py-20 px-4">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
@@ -85,19 +87,24 @@ function ChauffeurForm() {
               />
             </div>
 
-            {/* Phone */}
+            {/* Phone Number with Country Dropdown */}
             <div>
               <p>Phone</p>
-              <div className="flex items-center border rounded-lg px-2">
-                <span className="text-gray-500 px-2">+974</span>
-                <input
-                  type="text"
-                  name="phone"
-                  required
-                  placeholder="Phone (WhatsApp)"
-                  className="flex-1 px-2 py-3 focus:outline-none"
-                />
-              </div>
+              <PhoneInput
+                country={"qa"} // Default Qatar
+                name="phone"
+                inputProps={{
+                  name: "phone",
+                  required: true,
+                  autoFocus: false,
+                }}
+                placeholder="Enter your phone number"
+                containerClass="border rounded-lg"
+                inputClass="w-full py-3 px-3 focus:ring-2 focus:ring-[#cdaf8c]"
+              />
+              <p className="text-xs text-gray-500 mt-1">
+                Select your country code and enter your WhatsApp number.
+              </p>
             </div>
 
             {/* Pickup */}
@@ -156,33 +163,37 @@ function ChauffeurForm() {
               <textarea
                 name="specifications"
                 placeholder="Notes (child seat, signage, hours...)"
-                className="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c]"
+                className="w-full border rounded-lg px-4 py-3 focus:ring-2 focus:ring-[#cdaf8c] min-h-[100px]"
               />
             </div>
 
             {/* Buttons */}
-            <div className="flex gap-4 items-center">
+            <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center md:col-span-2 mt-4">
               <button
                 type="submit"
-                className="bg-black shadow-lg text-white px-4 py-3 rounded-lg hover:bg-[#cdaf8c] transition"
+                className="bg-black text-white shadow-lg px-5 py-3 rounded-lg w-full sm:w-auto hover:bg-[#cdaf8c] transition"
               >
                 Submit Enquiry
               </button>
 
+              {/* WhatsApp Button - does NOT trigger form validation */}
               <a
-                href="https://wa.me/97470750055"
+                href="https://wa.me/97470750055" // Replace with your WhatsApp number
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 bg-white py-2 px-3 rounded-lg shadow-lg"
+                type="button"
+                className="flex items-center justify-center gap-3 bg-white py-3 px-5 rounded-lg shadow-lg w-full sm:w-auto"
               >
-                <img src="/icons/chat.svg" alt="chat" />
-                Chat on Whatsapp
+                <IoChatboxOutline />
+                Chat on WhatsApp
               </a>
             </div>
 
-            {/* Status Message */}
+            {/* Status message */}
             {result && (
-              <p className="text-sm mt-4 text-gray-600 md:col-span-2">{result}</p>
+              <p className="text-sm mt-4 text-gray-600 md:col-span-2">
+                {result}
+              </p>
             )}
 
             <p className="text-xs text-gray-400 mt-4 md:col-span-2">
@@ -202,19 +213,19 @@ function ChauffeurForm() {
             </div>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-gray-700 text-sm">
               <li className="flex items-center gap-2">
-                <img src="/icons/tick.svg" alt="TICK" className="w-4 h-4" />
+                <img src="/icons/tick.svg" alt="tick" className="w-4 h-4" />
                 Trained, uniformed chauffeurs with route optimization
               </li>
               <li className="flex items-center gap-2">
-                <img src="/icons/tick.svg" alt="TICK" className="w-4 h-4" />
+                <img src="/icons/tick.svg" alt="tick" className="w-4 h-4" />
                 New-shape vehicles, discreet & impeccably maintained
               </li>
               <li className="flex items-center gap-2">
-                <img src="/icons/tick.svg" alt="TICK" className="w-4 h-4" />
+                <img src="/icons/tick.svg" alt="tick" className="w-4 h-4" />
                 Airport meet & greet with personalized signage
               </li>
               <li className="flex items-center gap-2">
-                <img src="/icons/tick.svg" alt="TICK" className="w-4 h-4" />
+                <img src="/icons/tick.svg" alt="tick" className="w-4 h-4" />
                 Transparent pricing, online payment & 24/7 support
               </li>
             </ul>
