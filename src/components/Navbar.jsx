@@ -92,7 +92,7 @@ export default function Navbar() {
         {/* Mobile Nav Trigger */}
         <div className="md:hidden flex items-center">
           <a
-            href="#book"
+            href="#booking"
             className="bg-white/10 border border-gray-700 px-3 py-1 rounded-full mr-2 text-sm hover:bg-[#cdaf8c] hover:text-black font-semibold transition"
           >
             BOOK NOW
