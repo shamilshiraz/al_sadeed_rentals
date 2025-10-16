@@ -100,7 +100,7 @@ function ChauffeurForm() {
                 }}
                 placeholder="Enter your phone number"
                 containerClass="border rounded-lg"
-                inputClass="w-full py-3 px-3 focus:ring-2 focus:ring-[#cdaf8c]"
+                inputClass=" py-3 px-3 focus:ring-2 focus:ring-[#cdaf8c]"
               />
               <p className="text-xs text-gray-500 mt-1">
                 Select your country code and enter your WhatsApp number.
@@ -151,8 +151,9 @@ function ChauffeurForm() {
               >
                 <option>Sedans</option>
                 <option>SUV</option>
-                <option>Vans & MPVs</option>
+                <option>MPVs</option>
                 <option>Ultra luxury</option>
+                                <option>Vans and Buses</option>
               </select>
             </div>
 
