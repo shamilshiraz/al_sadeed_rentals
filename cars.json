@@ -171,8 +171,8 @@
     "tagline": "Group travel, business class",
     "headCount": 7,
     "luggage": 7,
-    "cost5hrs": 1600,
-    "cost10hrs": 2500,
+    "cost5hrs": 600,
+    "cost10hrs": 1000,
     "carImage": "Mercedes Sprinter Van.png"
   },
   {
