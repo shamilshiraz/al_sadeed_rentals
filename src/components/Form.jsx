@@ -87,25 +87,25 @@ function ChauffeurForm() {
               />
             </div>
 
-            {/* Phone Number with Country Dropdown */}
-            <div>
-              <p>Phone</p>
-              <PhoneInput
-                country={"qa"} // Default Qatar
-                name="phone"
-                inputProps={{
-                  name: "phone",
-                  required: true,
-                  autoFocus: false,
-                }}
-                placeholder="Enter your phone number"
-                containerClass="border rounded-lg"
-                inputClass=" py-3 px-3 focus:ring-2 focus:ring-[#cdaf8c]"
-              />
-              <p className="text-xs text-gray-500 mt-1">
-                Select your country code and enter your WhatsApp number.
-              </p>
-            </div>
+<div>
+  <p>Phone</p>
+  <PhoneInput
+    country={"qa"} // Default Qatar
+    name="phone"
+    inputProps={{
+      name: "phone",
+      required: true,
+      autoFocus: false,
+    }}
+    placeholder="Enter your phone number"
+    containerClass="!border !border-gray-300 !rounded-lg"
+    inputClass="!border-none !py-3 px-3 "
+    buttonClass="!border-none"
+  />
+  <p className="text-xs text-gray-500 mt-1">
+    Select your country code and enter your WhatsApp number.
+  </p>
+</div>
 
             {/* Pickup */}
             <div>
