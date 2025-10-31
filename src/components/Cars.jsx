@@ -90,11 +90,12 @@ function CarCard({ car }) {
     carImage,
   } = car;
 
-  const imgUrl = `/cars/${carImage}`; // ✅ Must exist in /public/assets/
+  const imgUrl = `/cars/${carImage}`; // Should exist in public/assets/
 
   return (
-    <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all w-[90vw] sm:w-auto min-h-[360px] flex-shrink-0 flex flex-col">
-      <div className="bg-gray-100 p-6 flex items-center justify-center h-[200px]">
+    <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all w-[90vw] sm:w-auto min-h-[400px] flex-shrink-0 flex flex-col">
+      {/* IMAGE: No padding */}
+      <div className="bg-gray-100 flex items-center justify-center h-[200px]">
         <img
           src={imgUrl}
           alt={carName}
@@ -103,7 +104,8 @@ function CarCard({ car }) {
         />
       </div>
 
-      <div className="flex flex-col justify-between flex-1 p-4">
+      {/* CONTENT */}
+      <div className="flex flex-col justify-between flex-1 p-6">
         <h3 className="font-semibold text-xl text-gray-900">{carName}</h3>
         <div className="flex justify-between mt-2 text-gray-500 text-sm">
           <p className="truncate">{tagline}</p>
@@ -116,26 +118,32 @@ function CarCard({ car }) {
           </div>
         </div>
 
-        <div className="flex gap-2 mt-4 flex-wrap items-center">
-          <span className="px-2 sm:px-4 py-2 bg-gray-100 rounded-xl text-xs">
+        {/* PRICES & BUTTON */}
+        <div className="flex-nowrap flex gap-2 w-full mt-6 items-between justify-between">
+          <div className="px-1 h-12 flex items-center bg-gray-100 rounded-xl text-xs">
             QAR {cost5hrs} / 5hr
-          </span>
-          <span className="px-2 sm:px-4 py-2 bg-gray-100 rounded-xl text-xs">
+          </div>
+          <div className="px-1 h-12 flex items-center bg-gray-100 rounded-xl text-xs">
             QAR {cost10hrs} / 10hr
-          </span>
+          </div>
+                    <div className="px-1 h-12 flex items-between justify-between bg-black rounded-xl text-xs">
           <a
-            href={`https://wa.me/97470750055?text=I%20am%20interested%20in%20${encodeURIComponent(
-              carName
-            )}`}
+            href={`https://wa.me/97470750055?text=I%20am%20interested%20in%20${encodeURIComponent(carName)}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-2 sm:px-4 py-2 bg-black text-white rounded-xl text-xs flex items-center gap-1 text-center"
+            className="px-2 h-12 flex items-center bg-black text-white rounded-xl text-xs gap-2 text-center whitespace-nowrap"
+            style={{ minWidth: 120 }}
           >
-            <img src="/icons/CAR.svg" className="h-2" alt="" />
+            <img src="/icons/CAR.svg" className="h-4 " alt="" />
             Book a ride
           </a>
+          </div>
+          
+
         </div>
       </div>
     </div>
   );
 }
+
+
