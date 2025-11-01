@@ -11,7 +11,6 @@ export default function Landing() {
 
   useEffect(() => {
     const tl = gsap.timeline({ delay: 0.5 });
-
     tl.fromTo(
       headingRef.current,
       { y: 60, autoAlpha: 0, rotationX: -90 },
@@ -123,51 +122,48 @@ export default function Landing() {
             {/* Action buttons */}
             <div
               ref={buttonsRef}
-              className="flex flex-col md:flex-row gap-3 md:gap-4 mb-8"
+              className="flex md:flex-row gap-3 md:gap-4 mb-8"
             >
               <a
                 href="#booking"
-                className="text-black px-5 py-3 font-medium rounded-md shadow-sm transition duration-150 text-sm opacity-0 relative overflow-hidden group"
+                className="text-black w-full px-5 py-3 font-medium rounded-md shadow-sm transition duration-150 text-sm opacity-0 relative overflow-hidden group"
                 style={{ backgroundColor: "#CDAF8C" }}
-                onMouseEnter={(e) =>
-                  (e.currentTarget.style.backgroundColor = "#bfa271")
-                }
-                onMouseLeave={(e) =>
-                  (e.currentTarget.style.backgroundColor = "#CDAF8C")
-                }
+                onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#bfa271")}
+                onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#CDAF8C")}
               >
                 <span className="relative z-10">Book Your Ride</span>
               </a>
               <a
                 href="#fleet"
-                className="flex items-center justify-center bg-black/60 text-white px-5 py-3 rounded-md border border-[#cdaf8c] text-sm font-medium opacity-0 relative overflow-hidden group"
+                className="flex w-full items-center justify-center bg-black/60 text-white px-5 py-3 rounded-md border border-[#cdaf8c] text-sm font-medium opacity-0 relative overflow-hidden group"
               >
                 <span className="relative z-10 text-[#cdaf8c]">Our Fleet</span>
                 <span className="absolute inset-0 bg-white/5 translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0"></span>
               </a>
+              {/* Desktop-only phone button (Add this for desktop) */}
+              <a
+                href="tel:+97400000000"
+                className="hidden md:flex items-center bg-black/60 text-white px-5 py-3 rounded-md border border-[#cdaf8c] text-sm font-medium opacity-0 ml-2"
+                style={{ minWidth: "180px", justifyContent: "center" }}
+              >
+                +974 0000 0000
+              </a>
             </div>
           </div>
-
-{/* Star Rating Section - All in One Line */}
-<div
-  ref={starsRef}
-  className="flex items-center gap-3 text-white sm:pb-8 sm:text-right opacity-0 mb-8 md:mb-0"
->
-    {/* "EXCELLENT" */}
-  <span className="text-sm font-medium">EXCELLENT</span>
-  {/* Stars */}
-  <div className="flex gap-1">
-    {[...Array(5)].map((_, i) => (
-      <span key={i} className="text-gray-400 text-lg">★</span>
-    ))}
-  </div>
-
-  {/* "Reviews on Google" */}
-  <span className="text-xs text-gray-300">Reviews on Google</span>
-</div>
-
+          {/* Star Rating Section - All in One Line */}
+          <div
+            ref={starsRef}
+            className="flex items-center gap-3 text-white sm:pb-8 sm:text-right opacity-0 mb-8 md:mb-0"
+          >
+            <span className="text-xs font-medium">EXCELLENT</span>
+            <div className="flex gap-1">
+              {[...Array(5)].map((_, i) => (
+                <span key={i} className="text-gray-400 text-lg">★</span>
+              ))}
+            </div>
+            <span className="text-xs text-gray-300">Reviews on Google</span>
+          </div>
         </div>
-
 
       </section>
     </main>

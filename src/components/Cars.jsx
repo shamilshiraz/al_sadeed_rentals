@@ -131,7 +131,7 @@ function CarCard({ car }) {
             href={`https://wa.me/97470750055?text=I%20am%20interested%20in%20${encodeURIComponent(carName)}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-2 h-12 flex items-center bg-black text-white rounded-xl text-xs gap-2 text-center whitespace-nowrap"
+            className="px-3 h-12 flex items-center bg-black text-white rounded-xl text-xs gap-2 text-center whitespace-nowrap"
             style={{ minWidth: 120 }}
           >
             <img src="/icons/CAR.svg" className="h-4 " alt="" />
