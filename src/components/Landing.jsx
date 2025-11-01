@@ -140,14 +140,7 @@ export default function Landing() {
                 <span className="relative z-10 text-[#cdaf8c]">Our Fleet</span>
                 <span className="absolute inset-0 bg-white/5 translate-y-full transition-transform duration-500 ease-out group-hover:translate-y-0"></span>
               </a>
-              {/* Desktop-only phone button (Add this for desktop) */}
-              <a
-                href="tel:+97400000000"
-                className="hidden md:flex items-center bg-black/60 text-white px-5 py-3 rounded-md border border-[#cdaf8c] text-sm font-medium opacity-0 ml-2"
-                style={{ minWidth: "180px", justifyContent: "center" }}
-              >
-                +974 0000 0000
-              </a>
+
             </div>
           </div>
           {/* Star Rating Section - All in One Line */}
