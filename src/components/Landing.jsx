@@ -144,7 +144,8 @@ export default function Landing() {
             </div>
           </div>
           {/* Star Rating Section - All in One Line */}
-          <div
+          <a
+          href="https://www.google.com/maps/place/AL+SADEED+LUXURY+RENTAL/@25.2724375,51.5249375,17z/data=!3m1!4b1!4m6!3m5!1s0x3e45c5b39fcc04ff:0xc6deaccde4187c00!8m2!3d25.2724375!4d51.5249375!16s%2Fg%2F11zjcjs6jp?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D"
             ref={starsRef}
             className="flex items-center gap-3 text-white sm:pb-8 sm:text-right opacity-0 mb-8 md:mb-0"
           >
@@ -155,7 +156,7 @@ export default function Landing() {
               ))}
             </div>
             <span className="text-xs text-gray-300">Reviews on Google</span>
-          </div>
+          </a>
         </div>
 
       </section>
