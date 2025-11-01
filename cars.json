@@ -74,7 +74,7 @@
     "luggage": 3,
     "cost5hrs": 800,
     "cost10hrs": 1200,
-    "carImage": "a6.avif"
+    "carImage": "Audi A6.png"
   },
   {
     "id": 7,
@@ -184,7 +184,7 @@
     "luggage": 4,
     "cost5hrs": 2900,
     "cost10hrs": 3600,
-    "carImage": "g63.jpg"
+    "carImage": "G63.png"
   },
   {
     "id": 16,
@@ -272,7 +272,7 @@
     "luggage": 6,
     "cost5hrs": 800,
     "cost10hrs": 1500,
-    "carImage": "lc.jpg"
+    "carImage": "Toyota-Land-Cruiser.png"
   },
   {
     "id": 24,
@@ -294,7 +294,7 @@
     "luggage": 7,
     "cost5hrs": 1000,
     "cost10hrs": 1600,
-    "carImage": "sub.jpg"
+    "carImage": "suburban_c.png"
   },
   {
     "id": 26,
@@ -371,7 +371,7 @@
     "luggage": 4,
     "cost5hrs": 1800,
     "cost10hrs": 3000,
-    "carImage": "sprinter.jpeg"
+    "carImage": "sprinter_coach.png"
   },
   {
     "id": 33,
@@ -382,7 +382,7 @@
     "luggage": 4,
     "cost5hrs": 600,
     "cost10hrs": 1000,
-    "carImage": "hiace.jpg"
+    "carImage": "Toyota-HiAce.png"
   },
   {
     "id": 34,

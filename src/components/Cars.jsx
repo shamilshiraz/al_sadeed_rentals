@@ -1,5 +1,6 @@
 import { useState } from "react";
 import carsData from "../../cars.json";
+import { FaArrowRight } from "react-icons/fa";
 
 const categories = ["SEDANS", "MPVs", "SUVs", "ULTRA-LUXURY", "VANS & BUSES"];
 
@@ -58,9 +59,13 @@ export default function Fleet() {
 
             return (
               <div key={cat}>
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                <div className="flex justify-between mb-4">
+                <h3 className="text-lg font-semibold text-gray-900">
                   {cat}
                 </h3>
+                <div className="flex text-gray-400 justify-center items-center">View More <FaArrowRight/></div>
+                </div>
+
                 <div className="overflow-x-auto scrollbar-hide">
                   <div className="flex gap-4 pb-2 snap-x snap-mandatory scroll-smooth">
                     {categoryCars.map((car) => (
@@ -93,7 +98,7 @@ function CarCard({ car }) {
   const imgUrl = `/cars/${carImage}`; // Should exist in public/assets/
 
   return (
-    <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all w-[90vw] sm:w-auto min-h-[400px] flex-shrink-0 flex flex-col">
+    <div className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition-all w-[85vw] sm:w-auto min-h-[400px] flex-shrink-0 flex flex-col">
       {/* IMAGE: No padding */}
       <div className="bg-gray-100 flex items-center justify-center h-[200px]">
         <img
@@ -119,19 +124,19 @@ function CarCard({ car }) {
         </div>
 
         {/* PRICES & BUTTON */}
-        <div className="flex-nowrap flex gap-2 w-full mt-6 items-between justify-between">
+        <div className="flex-nowrap flex gap-2 w-full mt-6 items-center justify-between">
           <div className="px-1 h-12 flex items-center bg-gray-100 rounded-xl text-xs">
             QAR {cost5hrs} / 5hr
           </div>
           <div className="px-1 h-12 flex items-center bg-gray-100 rounded-xl text-xs">
             QAR {cost10hrs} / 10hr
           </div>
-                    <div className="px-1 h-12 flex items-between justify-between bg-black rounded-xl text-xs">
+                    <div className="px-1 h-12 flex items-between justify-between rounded-xl text-xs">
           <a
             href={`https://wa.me/97470750055?text=I%20am%20interested%20in%20${encodeURIComponent(carName)}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-3 h-12 flex items-center bg-black text-white rounded-xl text-xs gap-2 text-center whitespace-nowrap"
+            className=" h-12 justify-center flex items-center bg-black text-white rounded-xl text-xs gap-2 text-center whitespace-nowrap"
             style={{ minWidth: 120 }}
           >
             <img src="/icons/CAR.svg" className="h-4 " alt="" />
