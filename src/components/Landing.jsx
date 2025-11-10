@@ -126,7 +126,7 @@ export default function Landing() {
             >
               <a
                 href="#booking"
-                className="text-black w-full px-5 py-3 font-medium rounded-md shadow-sm transition duration-150 text-sm opacity-0 relative overflow-hidden group"
+                className="text-black w-full px-5 py-3 font-medium rounded-md text-center shadow-sm transition duration-150 text-sm opacity-0 relative overflow-hidden group"
                 style={{ backgroundColor: "#CDAF8C" }}
                 onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#bfa271")}
                 onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#CDAF8C")}
