@@ -149,7 +149,7 @@ export default function Landing() {
             ref={starsRef}
             className="flex items-center gap-3 text-white sm:pb-8 sm:text-right opacity-0 mb-8 md:mb-0"
           >
-            <span className="text-xs font-medium">EXCELLENT</span>
+            <span className="text-xs ">EXCELLENT</span>
             <div className="flex gap-1">
               {[...Array(5)].map((_, i) => (
                 <span key={i} className="text-gray-400 text-lg">★</span>
