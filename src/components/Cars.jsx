@@ -125,12 +125,12 @@ function CarCard({ car }) {
 
         {/* PRICES & BUTTON */}
         <div className="flex-nowrap flex gap-2 w-full mt-6 items-center justify-between">
-          <div className="px-1 h-12 flex items-center bg-gray-100 rounded-xl text-xs">
+          {/* <div className="px-1 h-12 flex items-center bg-gray-100 rounded-xl text-xs">
             QAR {cost5hrs} / 5hr
           </div>
           <div className="px-1 h-12 flex items-center bg-gray-100 rounded-xl text-xs">
             QAR {cost10hrs} / 10hr
-          </div>
+          </div> */}
                     <div className="px-1 h-12 flex items-between justify-between rounded-xl text-xs">
           <a
             href={`https://wa.me/97470750055?text=I%20am%20interested%20in%20${encodeURIComponent(carName)}`}

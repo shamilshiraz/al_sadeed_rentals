@@ -416,17 +416,6 @@
     "cost5hrs": "NIL",
     "cost10hrs": "NIL",
     "carImage": "KINGLONG.png"
-  },
-    {
-    "id": 37,
-    "carName": "Lamborghini urus",
-    "category": "SUVs",
-    "tagline": "Touring comfort, high capacity",
-    "headCount": "4",
-    "luggage": "4",
-    "cost5hrs": "1600",
-    "cost10hrs": "3200",
-    "carImage": "urus.png"
   }
   
 ]
