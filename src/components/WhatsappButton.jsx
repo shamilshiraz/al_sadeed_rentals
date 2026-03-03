@@ -17,23 +17,24 @@ function WhatsappButton() {
 
   return (
     <>
-      {/* Floating Button */}
-      <div className="fixed bottom-6 right-6 sm:right-10 z-40">
-        <button
-          onClick={() => setPopupOpen(true)}
-          className="flex items-center gap-3 px-6 py-3 rounded-xl text-white shadow-xl bg-white/10 border border-gray-700 backdrop-blur-md hover:bg-[#cdaf8c] hover:text-black transition-all font-medium"
-        >
-          <img src="/icons/chat.svg" alt="Chat Icon" />
-          <span className="text-xs font-semibold">WhatsApp</span>
-        </button>
-      </div>
+<div className="fixed bottom-6 right-6 sm:right-10 z-50">
+  <button
+    onClick={() => setPopupOpen(true)}
+    className="flex items-center gap-3 px-6 py-3 rounded-lg 
+               bg-[#cdaf8c] text-black font-semibold text-sm
+               shadow-2xl hover:scale-105 transition-all duration-300"
+  >
+    <img src="/icons/chat.svg" alt="Chat Icon" className="w-5 h-5" />
+    <span>Chat With Us</span>
+  </button>
+</div>
 
       {/* Popup */}
       {popupOpen && (
         <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-[100]">
           <div
             ref={popupRef}
-            className="bg-[#1e1e1e] border border-gray-700 rounded-2xl p-8 w-[90%] max-w-md text-white shadow-2xl"
+            className="bg-[#000] border border-gray-700 rounded-2xl p-8 w-[90%] max-w-md text-white shadow-2xl"
           >
             <h2 className="text-2xl font-semibold mb-6 text-center">
               Chat on WhatsApp
