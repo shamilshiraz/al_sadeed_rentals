@@ -116,7 +116,7 @@ export default function Landing() {
               className="text-white text-xs md:text-base mb-10 opacity-0"
             >
               Discreet, Dependable And Impeccably Maintained Vehicles With Professional Chauffeurs.<br />
-              Available 24/7 Across Doha.
+              Available 24/7 Across Doha, Riyadh, Dammam and Jeddah.
             </p>
 
             {/* Action buttons */}
